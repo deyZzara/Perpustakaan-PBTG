@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.7" version="22.7" Modules="professional" RootPath="." Language="id" Id="{D00A2553-161C-4841-90D1-19EADB3F302A}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Basis data penginstal ini berisi logika dan data yang dibutuhkan untuk menginstal  [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="download.exe" Type="8"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="Fadey"/>
+    <ROW Property="ProductCode" Value="1057:{A0B5CE94-7457-4DB2-9947-4D419CE6BAF9} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Perpustakaan"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{20853B10-1B1C-4D27-B1A6-505E22D5F117}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="bin_Dir" Directory_Parent="APPDIR" DefaultDir="bin" DirectoryOptions="3"/>
+    <ROW Directory="build_Dir" Directory_Parent="APPDIR" DefaultDir="build" DirectoryOptions="3"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes" DirectoryOptions="3"/>
+    <ROW Directory="dist_Dir" Directory_Parent="APPDIR" DefaultDir="dist" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="APPDIR" DefaultDir="NBPROJ~1|nbproject" DirectoryOptions="3"/>
+    <ROW Directory="perpustakaan_1_Dir" Directory_Parent="src_Dir" DefaultDir="PERPUS~1|perpustakaan" DirectoryOptions="3"/>
+    <ROW Directory="perpustakaan_Dir" Directory_Parent="classes_Dir" DefaultDir="PERPUS~1|perpustakaan" DirectoryOptions="3"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private" DirectoryOptions="3"/>
+    <ROW Directory="src_Dir" Directory_Parent="APPDIR" DefaultDir="src" DirectoryOptions="3"/>
+    <ROW Directory="test_Dir" Directory_Parent="APPDIR" DefaultDir="test" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{20233191-3246-4C1E-ACFE-50133E224DBA}"/>
+    <ROW Component="ProductInformation" Value="{8E79891F-F4E1-4BA0-930B-1E825BF51238}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{20233191-3246-4C1E-ACFE-50133E224DBA}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AbsoluteLayout.jar" ComponentId="{4438C788-B8B1-42B4-BAB2-4BDA6E0424C4}" Directory_="lib_Dir" Attributes="0" KeyPath="AbsoluteLayout.jar" Type="0"/>
+    <ROW Component="JPG" ComponentId="{EBFBBD4E-559B-4B1D-B353-C28B7E9BC96F}" Directory_="perpustakaan_Dir" Attributes="0" KeyPath="JPG" Type="0"/>
+    <ROW Component="JPG_1" ComponentId="{D27D6604-0C57-47D8-A220-50C441D20FAE}" Directory_="perpustakaan_1_Dir" Attributes="0" KeyPath="JPG_2" Type="0"/>
+    <ROW Component="Perpustakaan.exe" ComponentId="{86E1220D-FE21-486D-AAC5-6E827F65BAE6}" Directory_="APPDIR" Attributes="0" KeyPath="Perpustakaan.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{8E79891F-F4E1-4BA0-930B-1E825BF51238}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{D233C7ED-5633-415E-B1F5-D5A5D5A5D0CE}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="appletviewer.exe" ComponentId="{481B87CE-3E95-452B-B1F7-98EBBA5785CA}" Directory_="bin_Dir" Attributes="256" KeyPath="appletviewer.exe"/>
+    <ROW Component="build.xml" ComponentId="{27EC6865-A3A4-425D-BAD9-4171365ED3B2}" Directory_="APPDIR" Attributes="0" KeyPath="build.xml" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{38943612-C630-40C9-9672-9A0B981BF807}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{C783F250-A22D-4A28-9728-D25A7EA5EDDA}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="config.properties" ComponentId="{46C29CFD-4EE1-49DF-9971-A68220726A20}" Directory_="private_Dir" Attributes="0" KeyPath="config.properties" Type="0"/>
+    <ROW Component="extcheck.exe" ComponentId="{688D745B-F6FA-4F44-9B04-BCAB3D0E0469}" Directory_="bin_Dir" Attributes="256" KeyPath="extcheck.exe"/>
+    <ROW Component="idlj.exe" ComponentId="{A4D13A41-E3C3-45CD-AD8E-BCE8D65338AA}" Directory_="bin_Dir" Attributes="256" KeyPath="idlj.exe"/>
+    <ROW Component="jabswitch.exe" ComponentId="{F8956D5D-56C2-4E16-8052-C6AC381FA5EE}" Directory_="bin_Dir" Attributes="256" KeyPath="jabswitch.exe"/>
+    <ROW Component="jar.exe" ComponentId="{3BC3BD71-8F09-4CE8-8B4C-3DC9772B5EB6}" Directory_="bin_Dir" Attributes="256" KeyPath="jar.exe"/>
+    <ROW Component="jarsigner.exe" ComponentId="{0D55FCF3-F680-4DBB-A077-1B2AED446CF1}" Directory_="bin_Dir" Attributes="256" KeyPath="jarsigner.exe"/>
+    <ROW Component="java.exe" ComponentId="{08BE62AC-8F20-4744-BCB8-34FC3863E2E0}" Directory_="bin_Dir" Attributes="256" KeyPath="java.exe"/>
+    <ROW Component="javac.exe" ComponentId="{70ED738B-29E3-4B83-B6AD-E2E8ED642FA5}" Directory_="bin_Dir" Attributes="256" KeyPath="javac.exe"/>
+    <ROW Component="javadoc.exe" ComponentId="{95B88B96-96C9-4AC5-A1A3-7639F9DAE802}" Directory_="bin_Dir" Attributes="256" KeyPath="javadoc.exe"/>
+    <ROW Component="javafxpackager.exe" ComponentId="{EE880261-1ACA-4931-A01E-36A90AA3FBE5}" Directory_="bin_Dir" Attributes="256" KeyPath="javafxpackager.exe"/>
+    <ROW Component="javah.exe" ComponentId="{ECED1202-5B9F-422C-B878-5D4DED1C9DEF}" Directory_="bin_Dir" Attributes="256" KeyPath="javah.exe"/>
+    <ROW Component="javap.exe" ComponentId="{F6755BFA-5FD8-48D5-9B08-2F4C1A2D85CD}" Directory_="bin_Dir" Attributes="256" KeyPath="javap.exe"/>
+    <ROW Component="javapackager.exe" ComponentId="{DCAA47D6-7CEB-4846-9C99-BDE43ACE872C}" Directory_="bin_Dir" Attributes="256" KeyPath="javapackager.exe"/>
+    <ROW Component="javarmi.exe" ComponentId="{0339D499-2064-4A23-BA5D-5A55D62510E6}" Directory_="bin_Dir" Attributes="256" KeyPath="javarmi.exe"/>
+    <ROW Component="javaw.exe" ComponentId="{9A9112F6-5D84-4D07-B870-6C165AC63597}" Directory_="bin_Dir" Attributes="256" KeyPath="javaw.exe"/>
+    <ROW Component="javaws.exe" ComponentId="{15C7E21F-7233-472C-87C9-2BD7C07547E9}" Directory_="bin_Dir" Attributes="256" KeyPath="javaws.exe"/>
+    <ROW Component="jcmd.exe" ComponentId="{F5C158CE-5457-4425-B208-001A2558F27D}" Directory_="bin_Dir" Attributes="256" KeyPath="jcmd.exe"/>
+    <ROW Component="jconsole.exe" ComponentId="{70BC862B-650F-40DA-AB2F-0D3F5FAF86DF}" Directory_="bin_Dir" Attributes="256" KeyPath="jconsole.exe"/>
+    <ROW Component="jdb.exe" ComponentId="{6DF81626-FFAB-4A0E-BC02-304071768737}" Directory_="bin_Dir" Attributes="256" KeyPath="jdb.exe"/>
+    <ROW Component="jdeps.exe" ComponentId="{FF53FE87-4778-458B-A588-208F60A039B1}" Directory_="bin_Dir" Attributes="256" KeyPath="jdeps.exe"/>
+    <ROW Component="jhat.exe" ComponentId="{05411006-14B2-43FC-8892-21710B2376D4}" Directory_="bin_Dir" Attributes="256" KeyPath="jhat.exe"/>
+    <ROW Component="jinfo.exe" ComponentId="{39CA5369-54E2-451B-B2FC-D21F311058C2}" Directory_="bin_Dir" Attributes="256" KeyPath="jinfo.exe"/>
+    <ROW Component="jjs.exe" ComponentId="{6EEFB641-C6C2-424E-9050-90633845F40F}" Directory_="bin_Dir" Attributes="256" KeyPath="jjs.exe"/>
+    <ROW Component="jli.dll" ComponentId="{6A34B953-8364-4210-BD58-7205D485BDF0}" Directory_="bin_Dir" Attributes="256" KeyPath="jli.dll"/>
+    <ROW Component="jmap.exe" ComponentId="{ED679B0C-E476-4DF4-BCBB-45E7F68F7DC1}" Directory_="bin_Dir" Attributes="256" KeyPath="jmap.exe"/>
+    <ROW Component="jmc.exe" ComponentId="{9CB641E4-2C46-48BC-9D83-F81CE188232D}" Directory_="bin_Dir" Attributes="256" KeyPath="jmc.exe"/>
+    <ROW Component="jmc.ini" ComponentId="{2CE1AF4E-F280-4B39-810F-9D5B3201E3FB}" Directory_="bin_Dir" Attributes="0" KeyPath="jmc.ini" Type="0"/>
+    <ROW Component="jps.exe" ComponentId="{23F152BE-D3CC-44A4-9FDA-A5F9AE7979B9}" Directory_="bin_Dir" Attributes="256" KeyPath="jps.exe"/>
+    <ROW Component="jrunscript.exe" ComponentId="{FEA4E068-396F-4495-A4C6-DBCDA0958C69}" Directory_="bin_Dir" Attributes="256" KeyPath="jrunscript.exe"/>
+    <ROW Component="jsadebugd.exe" ComponentId="{24EEF486-6049-444D-95B1-C420E6125651}" Directory_="bin_Dir" Attributes="256" KeyPath="jsadebugd.exe"/>
+    <ROW Component="jstack.exe" ComponentId="{2EC67977-929A-4979-AB0D-B7CE8450816E}" Directory_="bin_Dir" Attributes="256" KeyPath="jstack.exe"/>
+    <ROW Component="jstat.exe" ComponentId="{7508F632-00AB-45C1-BDEB-4A582D400A60}" Directory_="bin_Dir" Attributes="256" KeyPath="jstat.exe"/>
+    <ROW Component="jstatd.exe" ComponentId="{184D6D89-11D8-4C6E-AFD1-B62DBC7FF8CC}" Directory_="bin_Dir" Attributes="256" KeyPath="jstatd.exe"/>
+    <ROW Component="jvisualvm.exe" ComponentId="{A1A96BAD-ED4D-4BA9-BF2A-D80B9E7680F7}" Directory_="bin_Dir" Attributes="0" KeyPath="jvisualvm.exe"/>
+    <ROW Component="keytool.exe" ComponentId="{C004D7FC-876F-4D68-BEDB-5CCE55F7DFC5}" Directory_="bin_Dir" Attributes="256" KeyPath="keytool.exe"/>
+    <ROW Component="kinit.exe" ComponentId="{41E034EA-FA01-4B86-88F3-979687060E55}" Directory_="bin_Dir" Attributes="256" KeyPath="kinit.exe"/>
+    <ROW Component="klist.exe" ComponentId="{5A899E68-6A6F-4769-9A81-20770296BF39}" Directory_="bin_Dir" Attributes="256" KeyPath="klist.exe"/>
+    <ROW Component="ktab.exe" ComponentId="{330ABBD3-CC1E-468C-92E1-E5DFCFAEAD9C}" Directory_="bin_Dir" Attributes="256" KeyPath="ktab.exe"/>
+    <ROW Component="msvcr100.dll" ComponentId="{B2DD4C07-3A7E-4A7F-BC7E-56BCAA7AB42D}" Directory_="bin_Dir" Attributes="256" KeyPath="msvcr100.dll"/>
+    <ROW Component="native2ascii.exe" ComponentId="{70FCF4C0-2480-46A0-A810-09FDC8A61666}" Directory_="bin_Dir" Attributes="256" KeyPath="native2ascii.exe"/>
+    <ROW Component="orbd.exe" ComponentId="{ADFCA80C-D5EC-46BA-88AD-2B70FDBEEA40}" Directory_="bin_Dir" Attributes="256" KeyPath="orbd.exe"/>
+    <ROW Component="pack200.exe" ComponentId="{29D42A66-004E-4287-8B1F-02CBDC1C9E54}" Directory_="bin_Dir" Attributes="256" KeyPath="pack200.exe"/>
+    <ROW Component="perpustakaan.jar" ComponentId="{FC6FC429-4D7D-41DD-80C0-5202BC411D3F}" Directory_="dist_Dir" Attributes="0" KeyPath="perpustakaan.jar" Type="0"/>
+    <ROW Component="policytool.exe" ComponentId="{D58E1587-77DE-45A2-B92C-8D7D80E181E4}" Directory_="bin_Dir" Attributes="256" KeyPath="policytool.exe"/>
+    <ROW Component="rmic.exe" ComponentId="{63A4B196-BFF1-4ACD-8F70-1E93F05A6DEA}" Directory_="bin_Dir" Attributes="256" KeyPath="rmic.exe"/>
+    <ROW Component="rmid.exe" ComponentId="{604F3BF7-1E27-43F2-B97A-619CC50786AB}" Directory_="bin_Dir" Attributes="256" KeyPath="rmid.exe"/>
+    <ROW Component="rmiregistry.exe" ComponentId="{217D078E-C378-41AD-9120-6224961B4359}" Directory_="bin_Dir" Attributes="256" KeyPath="rmiregistry.exe"/>
+    <ROW Component="schemagen.exe" ComponentId="{D984FC51-C3E2-455C-8D00-FA6CA70313EF}" Directory_="bin_Dir" Attributes="256" KeyPath="schemagen.exe"/>
+    <ROW Component="serialver.exe" ComponentId="{525BB109-1879-4093-B94E-B5B643FFEF9F}" Directory_="bin_Dir" Attributes="256" KeyPath="serialver.exe"/>
+    <ROW Component="servertool.exe" ComponentId="{39303386-9D51-4E1B-908E-94FC819E8BFD}" Directory_="bin_Dir" Attributes="256" KeyPath="servertool.exe"/>
+    <ROW Component="test" ComponentId="{5492EEB2-6F2D-4E4C-A20E-30A3ABAD8BDF}" Directory_="test_Dir" Attributes="0"/>
+    <ROW Component="tnameserv.exe" ComponentId="{E3089777-CAF6-4318-A1BC-F7695CFD3DD2}" Directory_="bin_Dir" Attributes="256" KeyPath="tnameserv.exe"/>
+    <ROW Component="unpack200.exe" ComponentId="{045A9626-D0DF-400E-A845-DDB3E7D64B75}" Directory_="bin_Dir" Attributes="256" KeyPath="unpack200.exe"/>
+    <ROW Component="wsgen.exe" ComponentId="{10B4FA99-E875-48BA-8FBF-0471B160C3AB}" Directory_="bin_Dir" Attributes="256" KeyPath="wsgen.exe"/>
+    <ROW Component="wsimport.exe" ComponentId="{9389FACE-A2A4-4ACB-8CDA-31078F5F1A3F}" Directory_="bin_Dir" Attributes="256" KeyPath="wsimport.exe"/>
+    <ROW Component="xjc.exe" ComponentId="{A269418E-0B4E-4DB0-86D6-B4B607FD1B8A}" Directory_="bin_Dir" Attributes="256" KeyPath="xjc.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="appletviewer.exe" Component_="appletviewer.exe" FileName="APPLET~1.EXE|appletviewer.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\appletviewer.exe" SelfReg="false"/>
+    <ROW File="extcheck.exe" Component_="extcheck.exe" FileName="extcheck.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\extcheck.exe" SelfReg="false"/>
+    <ROW File="idlj.exe" Component_="idlj.exe" FileName="idlj.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\idlj.exe" SelfReg="false"/>
+    <ROW File="jabswitch.exe" Component_="jabswitch.exe" FileName="JABSWI~1.EXE|jabswitch.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jabswitch.exe" SelfReg="false"/>
+    <ROW File="jar.exe" Component_="jar.exe" FileName="jar.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jar.exe" SelfReg="false"/>
+    <ROW File="jarsigner.exe" Component_="jarsigner.exe" FileName="JARSIG~1.EXE|jarsigner.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jarsigner.exe" SelfReg="false"/>
+    <ROW File="javarmi.exe" Component_="javarmi.exe" FileName="java-rmi.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\java-rmi.exe" SelfReg="false"/>
+    <ROW File="java.exe" Component_="java.exe" FileName="java.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\java.exe" SelfReg="false"/>
+    <ROW File="javac.exe" Component_="javac.exe" FileName="javac.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javac.exe" SelfReg="false"/>
+    <ROW File="javadoc.exe" Component_="javadoc.exe" FileName="javadoc.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javadoc.exe" SelfReg="false"/>
+    <ROW File="javafxpackager.exe" Component_="javafxpackager.exe" FileName="JAVAFX~1.EXE|javafxpackager.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javafxpackager.exe" SelfReg="false"/>
+    <ROW File="javah.exe" Component_="javah.exe" FileName="javah.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javah.exe" SelfReg="false"/>
+    <ROW File="javap.exe" Component_="javap.exe" FileName="javap.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javap.exe" SelfReg="false"/>
+    <ROW File="javapackager.exe" Component_="javapackager.exe" FileName="JAVAPA~1.EXE|javapackager.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javapackager.exe" SelfReg="false"/>
+    <ROW File="javaw.exe" Component_="javaw.exe" FileName="javaw.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javaw.exe" SelfReg="false"/>
+    <ROW File="javaws.exe" Component_="javaws.exe" FileName="javaws.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\javaws.exe" SelfReg="false"/>
+    <ROW File="jcmd.exe" Component_="jcmd.exe" FileName="jcmd.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jcmd.exe" SelfReg="false"/>
+    <ROW File="jconsole.exe" Component_="jconsole.exe" FileName="jconsole.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jconsole.exe" SelfReg="false"/>
+    <ROW File="jdb.exe" Component_="jdb.exe" FileName="jdb.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jdb.exe" SelfReg="false"/>
+    <ROW File="jdeps.exe" Component_="jdeps.exe" FileName="jdeps.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jdeps.exe" SelfReg="false"/>
+    <ROW File="jhat.exe" Component_="jhat.exe" FileName="jhat.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jhat.exe" SelfReg="false"/>
+    <ROW File="jinfo.exe" Component_="jinfo.exe" FileName="jinfo.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jinfo.exe" SelfReg="false"/>
+    <ROW File="jjs.exe" Component_="jjs.exe" FileName="jjs.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jjs.exe" SelfReg="false"/>
+    <ROW File="jli.dll" Component_="jli.dll" FileName="jli.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jli.dll" SelfReg="false"/>
+    <ROW File="jmap.exe" Component_="jmap.exe" FileName="jmap.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jmap.exe" SelfReg="false"/>
+    <ROW File="jmc.exe" Component_="jmc.exe" FileName="jmc.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jmc.exe" SelfReg="false"/>
+    <ROW File="jmc.ini" Component_="jmc.ini" FileName="jmc.ini" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jmc.ini" SelfReg="false"/>
+    <ROW File="jps.exe" Component_="jps.exe" FileName="jps.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jps.exe" SelfReg="false"/>
+    <ROW File="jrunscript.exe" Component_="jrunscript.exe" FileName="JRUNSC~1.EXE|jrunscript.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jrunscript.exe" SelfReg="false"/>
+    <ROW File="jsadebugd.exe" Component_="jsadebugd.exe" FileName="JSADEB~1.EXE|jsadebugd.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jsadebugd.exe" SelfReg="false"/>
+    <ROW File="jstack.exe" Component_="jstack.exe" FileName="jstack.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jstack.exe" SelfReg="false"/>
+    <ROW File="jstat.exe" Component_="jstat.exe" FileName="jstat.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jstat.exe" SelfReg="false"/>
+    <ROW File="jstatd.exe" Component_="jstatd.exe" FileName="jstatd.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jstatd.exe" SelfReg="false"/>
+    <ROW File="jvisualvm.exe" Component_="jvisualvm.exe" FileName="JVISUA~1.EXE|jvisualvm.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\jvisualvm.exe" SelfReg="false"/>
+    <ROW File="keytool.exe" Component_="keytool.exe" FileName="keytool.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\keytool.exe" SelfReg="false"/>
+    <ROW File="kinit.exe" Component_="kinit.exe" FileName="kinit.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\kinit.exe" SelfReg="false"/>
+    <ROW File="klist.exe" Component_="klist.exe" FileName="klist.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\klist.exe" SelfReg="false"/>
+    <ROW File="ktab.exe" Component_="ktab.exe" FileName="ktab.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\ktab.exe" SelfReg="false"/>
+    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\msvcr100.dll" SelfReg="false"/>
+    <ROW File="native2ascii.exe" Component_="native2ascii.exe" FileName="NATIVE~1.EXE|native2ascii.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\native2ascii.exe" SelfReg="false"/>
+    <ROW File="orbd.exe" Component_="orbd.exe" FileName="orbd.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\orbd.exe" SelfReg="false"/>
+    <ROW File="pack200.exe" Component_="pack200.exe" FileName="pack200.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\pack200.exe" SelfReg="false"/>
+    <ROW File="policytool.exe" Component_="policytool.exe" FileName="POLICY~1.EXE|policytool.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\policytool.exe" SelfReg="false"/>
+    <ROW File="rmic.exe" Component_="rmic.exe" FileName="rmic.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\rmic.exe" SelfReg="false"/>
+    <ROW File="rmid.exe" Component_="rmid.exe" FileName="rmid.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\rmid.exe" SelfReg="false"/>
+    <ROW File="rmiregistry.exe" Component_="rmiregistry.exe" FileName="RMIREG~1.EXE|rmiregistry.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\rmiregistry.exe" SelfReg="false"/>
+    <ROW File="schemagen.exe" Component_="schemagen.exe" FileName="SCHEMA~1.EXE|schemagen.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\schemagen.exe" SelfReg="false"/>
+    <ROW File="serialver.exe" Component_="serialver.exe" FileName="SERIAL~1.EXE|serialver.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\serialver.exe" SelfReg="false"/>
+    <ROW File="servertool.exe" Component_="servertool.exe" FileName="SERVER~1.EXE|servertool.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\servertool.exe" SelfReg="false"/>
+    <ROW File="tnameserv.exe" Component_="tnameserv.exe" FileName="TNAMES~1.EXE|tnameserv.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\tnameserv.exe" SelfReg="false"/>
+    <ROW File="unpack200.exe" Component_="unpack200.exe" FileName="UNPACK~1.EXE|unpack200.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\unpack200.exe" SelfReg="false"/>
+    <ROW File="wsgen.exe" Component_="wsgen.exe" FileName="wsgen.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\wsgen.exe" SelfReg="false"/>
+    <ROW File="wsimport.exe" Component_="wsimport.exe" FileName="wsimport.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\wsimport.exe" SelfReg="false"/>
+    <ROW File="xjc.exe" Component_="xjc.exe" FileName="xjc.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\bin\xjc.exe" SelfReg="false"/>
+    <ROW File="build.xml" Component_="build.xml" FileName="build.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build.xml" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="build.xml" FileName="manifest.mf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\manifest.mf" SelfReg="false"/>
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\built-jar.properties" SelfReg="false"/>
+    <ROW File="JPG" Component_="JPG" FileName="1.JPG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\1.JPG" SelfReg="false"/>
+    <ROW File="JPG_1" Component_="JPG" FileName="12.JPG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\12.JPG" SelfReg="false"/>
+    <ROW File="a725ce2134e60defaab5f9839de2e72dwhatsappwallpaperiphonewallpaper.jpg" Component_="JPG" FileName="A725CE~1.JPG|a725ce2134e60defaab5f9839de2e72d--whatsapp-wallpaper-iphone--wallpaper.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\a725ce2134e60defaab5f9839de2e72d--whatsapp-wallpaper-iphone--wallpaper.jpg" SelfReg="false"/>
+    <ROW File="akun1.class" Component_="JPG" FileName="AKUN$1~1.CLA|akun$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun$1.class" SelfReg="false"/>
+    <ROW File="akun2.class" Component_="JPG" FileName="AKUN$2~1.CLA|akun$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun$2.class" SelfReg="false"/>
+    <ROW File="akun3.class" Component_="JPG" FileName="AKUN$3~1.CLA|akun$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun$3.class" SelfReg="false"/>
+    <ROW File="akun4.class" Component_="JPG" FileName="AKUN$4~1.CLA|akun$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun$4.class" SelfReg="false"/>
+    <ROW File="akun5.class" Component_="JPG" FileName="AKUN$5~1.CLA|akun$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun$5.class" SelfReg="false"/>
+    <ROW File="akun6.class" Component_="JPG" FileName="AKUN$6~1.CLA|akun$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun$6.class" SelfReg="false"/>
+    <ROW File="akun.class" Component_="JPG" FileName="AKUN~1.CLA|akun.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\akun.class" SelfReg="false"/>
+    <ROW File="anggota1.class" Component_="JPG" FileName="ANGGOT~1.CLA|anggota$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$1.class" SelfReg="false"/>
+    <ROW File="anggota10.class" Component_="JPG" FileName="ANGGOT~2.CLA|anggota$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$10.class" SelfReg="false"/>
+    <ROW File="anggota11.class" Component_="JPG" FileName="ANGGOT~3.CLA|anggota$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$11.class" SelfReg="false"/>
+    <ROW File="anggota2.class" Component_="JPG" FileName="ANGGOT~4.CLA|anggota$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$2.class" SelfReg="false"/>
+    <ROW File="anggota3.class" Component_="JPG" FileName="ANGGOT~5.CLA|anggota$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$3.class" SelfReg="false"/>
+    <ROW File="anggota4.class" Component_="JPG" FileName="ANGGOT~6.CLA|anggota$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$4.class" SelfReg="false"/>
+    <ROW File="anggota5.class" Component_="JPG" FileName="ANGGOT~7.CLA|anggota$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$5.class" SelfReg="false"/>
+    <ROW File="anggota6.class" Component_="JPG" FileName="ANGGOT~8.CLA|anggota$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$6.class" SelfReg="false"/>
+    <ROW File="anggota7.class" Component_="JPG" FileName="ANGGOT~9.CLA|anggota$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$7.class" SelfReg="false"/>
+    <ROW File="anggota8.class" Component_="JPG" FileName="ANGGO~10.CLA|anggota$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$8.class" SelfReg="false"/>
+    <ROW File="anggota9.class" Component_="JPG" FileName="ANGGO~11.CLA|anggota$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota$9.class" SelfReg="false"/>
+    <ROW File="anggota.class" Component_="JPG" FileName="ANGGO~12.CLA|anggota.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\anggota.class" SelfReg="false"/>
+    <ROW File="backgroundimagesforregistrationform2.jpg" Component_="JPG" FileName="BACKGR~1.JPG|background-images-for-registration-form-2.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\background-images-for-registration-form-2.jpg" SelfReg="false"/>
+    <ROW File="backgroundtop.jpg" Component_="JPG" FileName="BACKGR~2.JPG|background-top.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\background-top.jpg" SelfReg="false"/>
+    <ROW File="databuku1.class" Component_="JPG" FileName="DATABU~1.CLA|databuku$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$1.class" SelfReg="false"/>
+    <ROW File="databuku2.class" Component_="JPG" FileName="DATABU~2.CLA|databuku$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$2.class" SelfReg="false"/>
+    <ROW File="databuku3.class" Component_="JPG" FileName="DATABU~3.CLA|databuku$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$3.class" SelfReg="false"/>
+    <ROW File="databuku4.class" Component_="JPG" FileName="DATABU~4.CLA|databuku$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$4.class" SelfReg="false"/>
+    <ROW File="databuku5.class" Component_="JPG" FileName="DATABU~5.CLA|databuku$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$5.class" SelfReg="false"/>
+    <ROW File="databuku6.class" Component_="JPG" FileName="DATABU~6.CLA|databuku$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$6.class" SelfReg="false"/>
+    <ROW File="databuku7.class" Component_="JPG" FileName="DATABU~7.CLA|databuku$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$7.class" SelfReg="false"/>
+    <ROW File="databuku8.class" Component_="JPG" FileName="DATABU~8.CLA|databuku$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$8.class" SelfReg="false"/>
+    <ROW File="databuku9.class" Component_="JPG" FileName="DATABU~9.CLA|databuku$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku$9.class" SelfReg="false"/>
+    <ROW File="databuku.class" Component_="JPG" FileName="DATAB~10.CLA|databuku.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\databuku.class" SelfReg="false"/>
+    <ROW File="karyawan1.class" Component_="JPG" FileName="KARYAW~1.CLA|karyawan$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$1.class" SelfReg="false"/>
+    <ROW File="karyawan10.class" Component_="JPG" FileName="KARYAW~2.CLA|karyawan$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$10.class" SelfReg="false"/>
+    <ROW File="karyawan11.class" Component_="JPG" FileName="KARYAW~3.CLA|karyawan$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$11.class" SelfReg="false"/>
+    <ROW File="karyawan12.class" Component_="JPG" FileName="KARYAW~4.CLA|karyawan$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$12.class" SelfReg="false"/>
+    <ROW File="karyawan13.class" Component_="JPG" FileName="KARYAW~5.CLA|karyawan$13.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$13.class" SelfReg="false"/>
+    <ROW File="karyawan2.class" Component_="JPG" FileName="KARYAW~6.CLA|karyawan$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$2.class" SelfReg="false"/>
+    <ROW File="karyawan3.class" Component_="JPG" FileName="KARYAW~7.CLA|karyawan$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$3.class" SelfReg="false"/>
+    <ROW File="karyawan4.class" Component_="JPG" FileName="KARYAW~8.CLA|karyawan$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$4.class" SelfReg="false"/>
+    <ROW File="karyawan5.class" Component_="JPG" FileName="KARYAW~9.CLA|karyawan$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$5.class" SelfReg="false"/>
+    <ROW File="karyawan6.class" Component_="JPG" FileName="KARYA~10.CLA|karyawan$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$6.class" SelfReg="false"/>
+    <ROW File="karyawan7.class" Component_="JPG" FileName="KARYA~11.CLA|karyawan$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$7.class" SelfReg="false"/>
+    <ROW File="karyawan8.class" Component_="JPG" FileName="KARYA~12.CLA|karyawan$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$8.class" SelfReg="false"/>
+    <ROW File="karyawan9.class" Component_="JPG" FileName="KARYA~13.CLA|karyawan$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan$9.class" SelfReg="false"/>
+    <ROW File="karyawan.class" Component_="JPG" FileName="KARYA~14.CLA|karyawan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\karyawan.class" SelfReg="false"/>
+    <ROW File="kotainisulaplahankosongjaditamanbacadbr2JkwTIe.jpg" Component_="JPG" FileName="KOTA-I~1.JPG|kota-ini-sulap-lahan-kosong-jadi-taman-baca-dbr2JkwTIe.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\kota-ini-sulap-lahan-kosong-jadi-taman-baca-dbr2JkwTIe.jpg" SelfReg="false"/>
+    <ROW File="login1.class" Component_="JPG" FileName="LOGIN$~1.CLA|login$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\login$1.class" SelfReg="false"/>
+    <ROW File="login2.class" Component_="JPG" FileName="LOGIN$~2.CLA|login$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\login$2.class" SelfReg="false"/>
+    <ROW File="login3.class" Component_="JPG" FileName="LOGIN$~3.CLA|login$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\login$3.class" SelfReg="false"/>
+    <ROW File="login4.class" Component_="JPG" FileName="LOGIN$~4.CLA|login$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\login$4.class" SelfReg="false"/>
+    <ROW File="login.class" Component_="JPG" FileName="LOGIN~1.CLA|login.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\login.class" SelfReg="false"/>
+    <ROW File="loginadmin1.class" Component_="JPG" FileName="LOGINA~1.CLA|loginadmin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\loginadmin$1.class" SelfReg="false"/>
+    <ROW File="loginadmin2.class" Component_="JPG" FileName="LOGINA~2.CLA|loginadmin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\loginadmin$2.class" SelfReg="false"/>
+    <ROW File="loginadmin3.class" Component_="JPG" FileName="LOGINA~3.CLA|loginadmin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\loginadmin$3.class" SelfReg="false"/>
+    <ROW File="loginadmin4.class" Component_="JPG" FileName="LOGINA~4.CLA|loginadmin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\loginadmin$4.class" SelfReg="false"/>
+    <ROW File="loginadmin.class" Component_="JPG" FileName="LOGINA~5.CLA|loginadmin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\loginadmin.class" SelfReg="false"/>
+    <ROW File="menuutama1.class" Component_="JPG" FileName="MENUUT~1.CLA|menuutama$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\menuutama$1.class" SelfReg="false"/>
+    <ROW File="menuutama2.class" Component_="JPG" FileName="MENUUT~2.CLA|menuutama$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\menuutama$2.class" SelfReg="false"/>
+    <ROW File="menuutama3.class" Component_="JPG" FileName="MENUUT~3.CLA|menuutama$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\menuutama$3.class" SelfReg="false"/>
+    <ROW File="menuutama4.class" Component_="JPG" FileName="MENUUT~4.CLA|menuutama$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\menuutama$4.class" SelfReg="false"/>
+    <ROW File="menuutama.class" Component_="JPG" FileName="MENUUT~5.CLA|menuutama.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\menuutama.class" SelfReg="false"/>
+    <ROW File="Perpustakaan.class" Component_="JPG" FileName="PERPUS~1.CLA|Perpustakaan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\Perpustakaan.class" SelfReg="false"/>
+    <ROW File="pinjam1.class" Component_="JPG" FileName="PINJAM~1.CLA|pinjam$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$1.class" SelfReg="false"/>
+    <ROW File="pinjam10.class" Component_="JPG" FileName="PINJAM~2.CLA|pinjam$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$10.class" SelfReg="false"/>
+    <ROW File="pinjam11.class" Component_="JPG" FileName="PINJAM~3.CLA|pinjam$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$11.class" SelfReg="false"/>
+    <ROW File="pinjam12.class" Component_="JPG" FileName="PINJAM~4.CLA|pinjam$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$12.class" SelfReg="false"/>
+    <ROW File="pinjam13.class" Component_="JPG" FileName="PINJAM~5.CLA|pinjam$13.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$13.class" SelfReg="false"/>
+    <ROW File="pinjam2.class" Component_="JPG" FileName="PINJAM~6.CLA|pinjam$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$2.class" SelfReg="false"/>
+    <ROW File="pinjam3.class" Component_="JPG" FileName="PINJAM~7.CLA|pinjam$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$3.class" SelfReg="false"/>
+    <ROW File="pinjam4.class" Component_="JPG" FileName="PINJAM~8.CLA|pinjam$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$4.class" SelfReg="false"/>
+    <ROW File="pinjam5.class" Component_="JPG" FileName="PINJAM~9.CLA|pinjam$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$5.class" SelfReg="false"/>
+    <ROW File="pinjam6.class" Component_="JPG" FileName="PINJA~10.CLA|pinjam$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$6.class" SelfReg="false"/>
+    <ROW File="pinjam7.class" Component_="JPG" FileName="PINJA~11.CLA|pinjam$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$7.class" SelfReg="false"/>
+    <ROW File="pinjam8.class" Component_="JPG" FileName="PINJA~12.CLA|pinjam$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$8.class" SelfReg="false"/>
+    <ROW File="pinjam9.class" Component_="JPG" FileName="PINJA~13.CLA|pinjam$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam$9.class" SelfReg="false"/>
+    <ROW File="pinjam.class" Component_="JPG" FileName="PINJA~14.CLA|pinjam.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\pinjam.class" SelfReg="false"/>
+    <ROW File="selamatdatang.class" Component_="JPG" FileName="SELAMA~1.CLA|selamatdatang.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\selamatdatang.class" SelfReg="false"/>
+    <ROW File="transaksi1.class" Component_="JPG" FileName="TRANSA~1.CLA|transaksi$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$1.class" SelfReg="false"/>
+    <ROW File="transaksi10.class" Component_="JPG" FileName="TRANSA~2.CLA|transaksi$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$10.class" SelfReg="false"/>
+    <ROW File="transaksi2.class" Component_="JPG" FileName="TRANSA~3.CLA|transaksi$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$2.class" SelfReg="false"/>
+    <ROW File="transaksi3.class" Component_="JPG" FileName="TRANSA~4.CLA|transaksi$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$3.class" SelfReg="false"/>
+    <ROW File="transaksi4.class" Component_="JPG" FileName="TRANSA~5.CLA|transaksi$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$4.class" SelfReg="false"/>
+    <ROW File="transaksi5.class" Component_="JPG" FileName="TRANSA~6.CLA|transaksi$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$5.class" SelfReg="false"/>
+    <ROW File="transaksi6.class" Component_="JPG" FileName="TRANSA~7.CLA|transaksi$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$6.class" SelfReg="false"/>
+    <ROW File="transaksi7.class" Component_="JPG" FileName="TRANSA~8.CLA|transaksi$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$7.class" SelfReg="false"/>
+    <ROW File="transaksi8.class" Component_="JPG" FileName="TRANSA~9.CLA|transaksi$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$8.class" SelfReg="false"/>
+    <ROW File="transaksi9.class" Component_="JPG" FileName="TRANS~10.CLA|transaksi$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi$9.class" SelfReg="false"/>
+    <ROW File="transaksi.class" Component_="JPG" FileName="TRANS~11.CLA|transaksi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\transaksi.class" SelfReg="false"/>
+    <ROW File="unnamed.png" Component_="JPG" FileName="unnamed.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\unnamed.png" SelfReg="false"/>
+    <ROW File="WhatsAppImage20180706at9.36.55PM.jpeg" Component_="JPG" FileName="WHATSA~1.JPE|WhatsApp Image 2018-07-06 at 9.36.55 PM.jpeg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\build\classes\perpustakaan\WhatsApp Image 2018-07-06 at 9.36.55 PM.jpeg" SelfReg="false"/>
+    <ROW File="AbsoluteLayout.jar" Component_="AbsoluteLayout.jar" FileName="ABSOLU~1.JAR|AbsoluteLayout.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\dist\lib\AbsoluteLayout.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorjava5.1.23bin.jar" Component_="AbsoluteLayout.jar" FileName="MYSQL-~1.JAR|mysql-connector-java-5.1.23-bin.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\dist\lib\mysql-connector-java-5.1.23-bin.jar" SelfReg="false"/>
+    <ROW File="perpustakaan.jar" Component_="perpustakaan.jar" FileName="PERPUS~1.JAR|perpustakaan.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\dist\perpustakaan.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="perpustakaan.jar" FileName="README.TXT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\dist\README.TXT" SelfReg="false"/>
+    <ROW File="JPG_2" Component_="JPG_1" FileName="1.JPG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\1.JPG" SelfReg="false"/>
+    <ROW File="JPG_3" Component_="JPG_1" FileName="12.JPG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\12.JPG" SelfReg="false"/>
+    <ROW File="a725ce2134e60defaab5f9839de2e72dwh_1_atsappwallpaperiphonewallpaper.j" Component_="JPG_1" FileName="A725CE~1.JPG|a725ce2134e60defaab5f9839de2e72d--whatsapp-wallpaper-iphone--wallpaper.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\a725ce2134e60defaab5f9839de2e72d--whatsapp-wallpaper-iphone--wallpaper.jpg" SelfReg="false"/>
+    <ROW File="akun.form" Component_="JPG_1" FileName="AKUN~1.FOR|akun.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\akun.form" SelfReg="false"/>
+    <ROW File="akun.java" Component_="JPG_1" FileName="AKUN~1.JAV|akun.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\akun.java" SelfReg="false"/>
+    <ROW File="anggota.form" Component_="JPG_1" FileName="ANGGOT~1.FOR|anggota.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\anggota.form" SelfReg="false"/>
+    <ROW File="anggota.java" Component_="JPG_1" FileName="ANGGOT~1.JAV|anggota.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\anggota.java" SelfReg="false"/>
+    <ROW File="backgroundimagesforregistrationfor_1_m2.jpg" Component_="JPG_1" FileName="BACKGR~1.JPG|background-images-for-registration-form-2.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\background-images-for-registration-form-2.jpg" SelfReg="false"/>
+    <ROW File="backgroundtop.jpg_1" Component_="JPG_1" FileName="BACKGR~2.JPG|background-top.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\background-top.jpg" SelfReg="false"/>
+    <ROW File="databuku.form" Component_="JPG_1" FileName="DATABU~1.FOR|databuku.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\databuku.form" SelfReg="false"/>
+    <ROW File="databuku.java" Component_="JPG_1" FileName="DATABU~1.JAV|databuku.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\databuku.java" SelfReg="false"/>
+    <ROW File="karyawan.form" Component_="JPG_1" FileName="KARYAW~1.FOR|karyawan.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\karyawan.form" SelfReg="false"/>
+    <ROW File="karyawan.java" Component_="JPG_1" FileName="KARYAW~1.JAV|karyawan.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\karyawan.java" SelfReg="false"/>
+    <ROW File="kotainisulaplahankosongjaditamanba_1_cadbr2JkwTIe.jpg" Component_="JPG_1" FileName="KOTA-I~1.JPG|kota-ini-sulap-lahan-kosong-jadi-taman-baca-dbr2JkwTIe.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\kota-ini-sulap-lahan-kosong-jadi-taman-baca-dbr2JkwTIe.jpg" SelfReg="false"/>
+    <ROW File="login.form" Component_="JPG_1" FileName="LOGIN~1.FOR|login.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\login.form" SelfReg="false"/>
+    <ROW File="login.java" Component_="JPG_1" FileName="LOGIN~1.JAV|login.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\login.java" SelfReg="false"/>
+    <ROW File="loginadmin.form" Component_="JPG_1" FileName="LOGINA~1.FOR|loginadmin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\loginadmin.form" SelfReg="false"/>
+    <ROW File="loginadmin.java" Component_="JPG_1" FileName="LOGINA~1.JAV|loginadmin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\loginadmin.java" SelfReg="false"/>
+    <ROW File="menuutama.form" Component_="JPG_1" FileName="MENUUT~1.FOR|menuutama.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\menuutama.form" SelfReg="false"/>
+    <ROW File="menuutama.java" Component_="JPG_1" FileName="MENUUT~1.JAV|menuutama.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\menuutama.java" SelfReg="false"/>
+    <ROW File="Perpustakaan.java" Component_="JPG_1" FileName="PERPUS~1.JAV|Perpustakaan.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\Perpustakaan.java" SelfReg="false"/>
+    <ROW File="pinjam.form" Component_="JPG_1" FileName="PINJAM~1.FOR|pinjam.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\pinjam.form" SelfReg="false"/>
+    <ROW File="pinjam.java" Component_="JPG_1" FileName="PINJAM~1.JAV|pinjam.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\pinjam.java" SelfReg="false"/>
+    <ROW File="selamatdatang.java" Component_="JPG_1" FileName="SELAMA~1.JAV|selamatdatang.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\selamatdatang.java" SelfReg="false"/>
+    <ROW File="transaksi.form" Component_="JPG_1" FileName="TRANSA~1.FOR|transaksi.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\transaksi.form" SelfReg="false"/>
+    <ROW File="transaksi.java" Component_="JPG_1" FileName="TRANSA~1.JAV|transaksi.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\transaksi.java" SelfReg="false"/>
+    <ROW File="unnamed.png_1" Component_="JPG_1" FileName="unnamed.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\unnamed.png" SelfReg="false"/>
+    <ROW File="WhatsAppImage20180706at9.36.55PM.jpeg_1" Component_="JPG_1" FileName="WHATSA~1.JPE|WhatsApp Image 2018-07-06 at 9.36.55 PM.jpeg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\src\perpustakaan\WhatsApp Image 2018-07-06 at 9.36.55 PM.jpeg" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="config.properties" Component_="config.properties" FileName="CONFIG~1.PRO|config.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\private\config.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="config.properties" FileName="PRIVAT~1.PRO|private.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="config.properties" FileName="private.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\perpustakaan\nbproject\project.xml" SelfReg="false"/>
+    <ROW File="Perpustakaan.exe" Component_="Perpustakaan.exe" FileName="PERPUS~1.EXE|Perpustakaan.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="id" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_id.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="test_Dir" Component_="test" ManualDelete="false"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="test"/>
+    <ROW Feature_="MainFeature" Component_="appletviewer.exe"/>
+    <ROW Feature_="MainFeature" Component_="extcheck.exe"/>
+    <ROW Feature_="MainFeature" Component_="idlj.exe"/>
+    <ROW Feature_="MainFeature" Component_="jabswitch.exe"/>
+    <ROW Feature_="MainFeature" Component_="jar.exe"/>
+    <ROW Feature_="MainFeature" Component_="jarsigner.exe"/>
+    <ROW Feature_="MainFeature" Component_="javarmi.exe"/>
+    <ROW Feature_="MainFeature" Component_="java.exe"/>
+    <ROW Feature_="MainFeature" Component_="javac.exe"/>
+    <ROW Feature_="MainFeature" Component_="javadoc.exe"/>
+    <ROW Feature_="MainFeature" Component_="javafxpackager.exe"/>
+    <ROW Feature_="MainFeature" Component_="javah.exe"/>
+    <ROW Feature_="MainFeature" Component_="javap.exe"/>
+    <ROW Feature_="MainFeature" Component_="javapackager.exe"/>
+    <ROW Feature_="MainFeature" Component_="javaw.exe"/>
+    <ROW Feature_="MainFeature" Component_="javaws.exe"/>
+    <ROW Feature_="MainFeature" Component_="jcmd.exe"/>
+    <ROW Feature_="MainFeature" Component_="jconsole.exe"/>
+    <ROW Feature_="MainFeature" Component_="jdb.exe"/>
+    <ROW Feature_="MainFeature" Component_="jdeps.exe"/>
+    <ROW Feature_="MainFeature" Component_="jhat.exe"/>
+    <ROW Feature_="MainFeature" Component_="jinfo.exe"/>
+    <ROW Feature_="MainFeature" Component_="jjs.exe"/>
+    <ROW Feature_="MainFeature" Component_="jli.dll"/>
+    <ROW Feature_="MainFeature" Component_="jmap.exe"/>
+    <ROW Feature_="MainFeature" Component_="jmc.exe"/>
+    <ROW Feature_="MainFeature" Component_="jmc.ini"/>
+    <ROW Feature_="MainFeature" Component_="jps.exe"/>
+    <ROW Feature_="MainFeature" Component_="jrunscript.exe"/>
+    <ROW Feature_="MainFeature" Component_="jsadebugd.exe"/>
+    <ROW Feature_="MainFeature" Component_="jstack.exe"/>
+    <ROW Feature_="MainFeature" Component_="jstat.exe"/>
+    <ROW Feature_="MainFeature" Component_="jstatd.exe"/>
+    <ROW Feature_="MainFeature" Component_="jvisualvm.exe"/>
+    <ROW Feature_="MainFeature" Component_="keytool.exe"/>
+    <ROW Feature_="MainFeature" Component_="kinit.exe"/>
+    <ROW Feature_="MainFeature" Component_="klist.exe"/>
+    <ROW Feature_="MainFeature" Component_="ktab.exe"/>
+    <ROW Feature_="MainFeature" Component_="msvcr100.dll"/>
+    <ROW Feature_="MainFeature" Component_="native2ascii.exe"/>
+    <ROW Feature_="MainFeature" Component_="orbd.exe"/>
+    <ROW Feature_="MainFeature" Component_="pack200.exe"/>
+    <ROW Feature_="MainFeature" Component_="policytool.exe"/>
+    <ROW Feature_="MainFeature" Component_="rmic.exe"/>
+    <ROW Feature_="MainFeature" Component_="rmid.exe"/>
+    <ROW Feature_="MainFeature" Component_="rmiregistry.exe"/>
+    <ROW Feature_="MainFeature" Component_="schemagen.exe"/>
+    <ROW Feature_="MainFeature" Component_="serialver.exe"/>
+    <ROW Feature_="MainFeature" Component_="servertool.exe"/>
+    <ROW Feature_="MainFeature" Component_="tnameserv.exe"/>
+    <ROW Feature_="MainFeature" Component_="unpack200.exe"/>
+    <ROW Feature_="MainFeature" Component_="wsgen.exe"/>
+    <ROW Feature_="MainFeature" Component_="wsimport.exe"/>
+    <ROW Feature_="MainFeature" Component_="xjc.exe"/>
+    <ROW Feature_="MainFeature" Component_="build.xml"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="JPG"/>
+    <ROW Feature_="MainFeature" Component_="AbsoluteLayout.jar"/>
+    <ROW Feature_="MainFeature" Component_="perpustakaan.jar"/>
+    <ROW Feature_="MainFeature" Component_="JPG_1"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="config.properties"/>
+    <ROW Feature_="MainFeature" Component_="Perpustakaan.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="download.exe" SourcePath="..\..\..\download.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="Perpustakaan.exe"/>
+    <ROW IniFile="ClassPath" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[#perpustakaan.jar];[#AbsoluteLayout.jar];[#mysqlconnectorjava5.1.23bin.jar];" Action="0" Component_="Perpustakaan.exe"/>
+    <ROW IniFile="FailureCheck" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="Perpustakaan.exe"/>
+    <ROW IniFile="MainClass" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="perpustakaan.Perpustakaan" Action="0" Component_="Perpustakaan.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="Perpustakaan.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="Perpustakaan.exe"/>
+    <ROW IniFile="VMProvider" FileName="PERPUS~2.INI|Perpustakaan.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="VM Provider" Value="any" Action="0" Component_="Perpustakaan.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="Perpustakaan.exe" Launcher="Perpustakaan.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#Perpustakaan.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="0" VMProviderOptions="VMProvider" Platform64="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] tidak dapat diinstal di [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Perpustakaan" Directory_="SHORTCUTDIR" Name="PERPUS~1|Perpustakaan" Component_="Perpustakaan.exe" Target="[#Perpustakaan.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="PerpustakaanPBTG" Directory_="SHORTCUTDIR" Name="PERPUS~2|Perpustakaan PBTG" Component_="Perpustakaan.exe" Target="[#Perpustakaan.exe]" Hotkey="0" Icon_="download.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
